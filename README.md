@@ -1,7 +1,7 @@
 newsletter-subscription-form
 ============================
 
-* WordPress Plugin
+WordPress Plugin
 
 To override the default text values, color and logo of the widget to reflect your brand:
 
