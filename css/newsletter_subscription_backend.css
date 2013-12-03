@@ -1,0 +1,196 @@
+div.widget div.widget-inside {
+    background-color: #fcfcfc;
+    padding: 0 0 10px;
+}
+div.widget div.widget-control-actions {
+    margin: 10px 15px 0;
+}
+div.newsletter {
+    font-family: Helvetica,Arial,sans-serif;
+}
+/*** HEADER */
+div.newsletter div.header {
+    height: 85px;
+    width: 250px;
+    position: relative;
+}
+div.newsletter div.header.loggedin {
+    height: 75px;
+}
+div.newsletter div.header img {
+    position: absolute;
+}
+div.newsletter div.header img.logo {
+    top: 15px;
+    left: 80px;
+    width: 90px;
+    height: 90px;
+}
+div.newsletter div.header.loggedin img.logo {
+    top: 13px;
+    left: 10px;
+    height: 50px;
+    width: 50px;
+}
+div.newsletter div.header img.gravatar {
+    display: none;
+}
+div.newsletter div.header.loggedin img.gravatar {
+    display: block;
+    top: 5px;
+    right: 5px;
+    height: 25px;
+    border-radius: 25px;
+}
+div.newsletter div.header div,
+div.newsletter div.header a.logout {
+    display: none;
+}
+div.newsletter div.header.loggedin div,
+div.newsletter div.header.loggedin a.logout {
+    display: block;
+}
+div.newsletter div.header.loggedin div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: 'Din',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-left: 60px;
+}
+div.newsletter div.header.loggedin div.username {
+    font-size: 14px;
+    padding-top: 25px;
+    width: 185px;
+}
+div.newsletter div.header.loggedin div.company {
+    font-size: 12px;
+    width: 185px;
+}
+div.newsletter div.header.loggedin a.logout {
+    color: #ab9379;
+    font-size: 10px;
+    position: absolute;
+    top: 32px;
+    right: 5px;
+}
+/*** SECTION */
+div.newsletter div.section {
+}
+    /* title */
+div.newsletter div.section div.title {
+    background-color: #ffffff;
+    border-bottom: solid 1px #d7d7d7;
+    padding: 7px 15px;
+}
+div.newsletter div.section div.title.prev_open,
+div.newsletter div.section div.title.first {
+    border-top: solid 1px #d7d7d7;
+}
+div.newsletter div.section.collapsable div.title {
+    display: block;
+    cursor: pointer;
+}
+div.newsletter div.section div.title div.label {
+    font-weight: bold;
+    white-space: nowrap;
+    width: 205px;
+    display: inline-block;
+}
+div.newsletter div.section div.title div.arrow {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    display: inline-block;
+}
+div.newsletter div.section div.title div.arrow {
+    border-bottom: none;
+    border-top: 4px solid #999999;
+}
+div.newsletter div.section div.title.open div.arrow {
+    border-bottom: 4px solid #999999;
+    border-top: none;
+}
+    /* form */
+div.newsletter div.form {
+    padding: 15px;
+    border-bottom: solid 1px #d7d7d7;
+}
+div.newsletter div.form label {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+div.newsletter div.form input[type="text"],
+div.newsletter div.form input[type="password"],
+div.newsletter div.form textarea {
+    color:#343434;
+    padding: 5px 5px 5px 10px;
+    border:1px solid #dddddd;  
+    border-radius: 4px;  
+    margin-bottom: 10px;
+    width: 100%; 
+    resize:none;
+}
+div.newsletter div.form input[type="text"].error,
+div.newsletter div.form input[type="password"].error {
+    border-color:#f00;
+}
+div.newsletter div.form textarea {
+    height: 60px;
+}
+div.newsletter div.form input[type="checkbox"] {
+    display: inline-block;
+    margin-top: 6px;
+    margin-left: 4px;
+    float: left;
+}
+div.newsletter div.form select {
+    height: 25px;
+}
+div.newsletter div.form div.noaccount {
+    padding-top: 20px;
+}
+div.newsletter div.form input.powered_check {
+    margin-top: 8px;
+}
+div.newsletter div.form p.powered_message {
+   margin-left: 25px; 
+}
+    /* fields */
+div.newsletter div.form ul.fields-container {
+    margin-top: 15px;
+}
+div.newsletter div.form ul.fields-container li {
+    background-color: #fafafa;
+    border-radius: 4px;
+    padding: 5px 5px 0 0;
+    border: solid 1px #ddd;
+}
+div.newsletter div.form ul.fields-container li.drag-disabled {
+    background-color: #ffffff;
+    border: solid 1px #f0f0f0;
+}
+div.newsletter div.form ul.fields-container li.drag-disabled * {
+    opacity: 0.35;
+}
+div.newsletter div.form ul.fields-container li.drag-disabled input[type="checkbox"] {
+    opacity: 1;
+}
+div.newsletter div.form ul.fields-container img.drag-icon {
+    cursor: move;
+    float: right;
+
+}
+div.newsletter div.form ul.fields-container li.drag-disabled img.drag-icon {
+    cursor: default;
+}
+div.newsletter div.form ul.fields-container input[type="text"] {
+    margin-left: 20px;
+    width: 190px;
+}
+/**/
+div.newsletter .hidden {
+    display: none!important;
+}

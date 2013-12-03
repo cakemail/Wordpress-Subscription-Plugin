@@ -1,0 +1,129 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CakeMail Subsriber Form\n"
+"POT-Creation-Date: 2013-11-28 11:06-0500\n"
+"PO-Revision-Date: 2013-11-28 11:07-0500\n"
+"Last-Translator: Patrick Beaudoin <p@cakemail.com>\n"
+"Language-Team: CakeMail <dev@cakemail.com>\n"
+"Language: Fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__\n"
+"X-Poedit-Basepath: /Users/patrick/Sources/SVN/cakemailsubscriptionform/"
+"trunk/\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: cakemailsubscriptionform.php:31
+msgid ""
+"CakeMail is an easy-to-use email marketing application that lets you build & "
+"send professional-looking email campaigns in minutes and track results."
+msgstr ""
+"CakeMail est un outil de marketing par courriel facile à utiliser. Fabriquez "
+"et envoyez des campagnes courriel d'une allure professionnelle en quelques "
+"minutes et suivez les résultats en direct."
+
+#: cakemailsubscriptionform.php:81
+msgid "Newsletter"
+msgstr "Infolettre"
+
+#: cakemailsubscriptionform.php:82
+msgid "Subscribe to our newsletter!"
+msgstr "Abonnez-vous à notre infolettre!"
+
+#: cakemailsubscriptionform.php:83
+msgid ""
+"We just sent you an email that you need to click on before you get added to "
+"the list"
+msgstr ""
+"Nous venons de vous envoyer un courriel. Vous devez cliquer sur le lien pour "
+"être ajouté à la liste"
+
+#: cakemailsubscriptionform.php:84
+msgid "Subscribe"
+msgstr "Abonnement"
+
+#: inc/cakeapi.php:52 inc/cakeapi.php:53
+msgid "The combination email-password does not exists!"
+msgstr "La combinaison courriel-mot de passe n'existe pas"
+
+#: views/cakemail_subscription_backend.php:19
+msgid "Account"
+msgstr "Compte"
+
+#: views/cakemail_subscription_backend.php:24
+msgid "Email"
+msgstr "Courriel"
+
+#: views/cakemail_subscription_backend.php:27
+msgid "Password"
+msgstr "Mot de passe"
+
+#: views/cakemail_subscription_backend.php:31
+msgid "Don't have a CakeMail account?"
+msgstr "Vous n'avez pas encore de compte CakeMail?"
+
+#: views/cakemail_subscription_backend.php:31
+msgid "Create an account"
+msgstr "Créer un compte"
+
+#: views/cakemail_subscription_backend.php:41
+msgid "Widget configuration"
+msgstr "Configuration du widget"
+
+#: views/cakemail_subscription_backend.php:45
+msgid "Widget title"
+msgstr "Titre du widget"
+
+#: views/cakemail_subscription_backend.php:48
+msgid "Description"
+msgstr "Description"
+
+#: views/cakemail_subscription_backend.php:51
+msgid "Confirmation message"
+msgstr "Message de confirmation"
+
+#: views/cakemail_subscription_backend.php:54
+msgid "Subscribe button text"
+msgstr "Texte du bouton d'abonnement"
+
+#: views/cakemail_subscription_backend.php:67
+msgid "Contact lists"
+msgstr "Liste de contacts"
+
+#: views/cakemail_subscription_backend.php:87
+msgid "Place title above field"
+msgstr "Placer le titre au-dessus du champ"
+
+#: views/cakemail_subscription_backend_fields.php:12
+msgid "Title"
+msgstr "Titre"
+
+#~ msgid "\"Powered by CakeMail\" message."
+#~ msgstr "Message \"Généré par CakeMail\"."
+
+#~ msgid "Don't want to show the message?"
+#~ msgstr "Vous ne voulez pas afficher le message?"
+
+#~ msgid "Upgrade your account"
+#~ msgstr "Mise à niveau du compte"
+
+#~ msgid "Subscribers lists"
+#~ msgstr "Liste d'abonnés"
+
+#~ msgid "Show fields label"
+#~ msgstr "Afficher les noms des champs"
+
+#~ msgid "Powered by"
+#~ msgstr "Généré par"
+
+#~ msgid "CakeMail Subscription Widget"
+#~ msgstr "CakeMail Widget d'abonnement"
+
+#~ msgid "Select a list"
+#~ msgstr "Sélectionner une liste"
+
+#~ msgid "Enter your email..."
+#~ msgstr "Entrez votre courriel"

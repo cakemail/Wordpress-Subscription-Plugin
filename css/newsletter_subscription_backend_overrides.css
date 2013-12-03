@@ -1,0 +1,9 @@
+div.newsletter div.header {
+    background-color: #c5d5e5;
+}
+div.newsletter div.header div.username {
+    color: #004585;
+}
+div.newsletter div.header div.company {
+    color: #2d6294;
+}
