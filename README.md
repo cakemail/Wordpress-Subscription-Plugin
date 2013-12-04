@@ -17,7 +17,8 @@ newsletter-subscription-form
 Change the default text values using notepad or an editing program to change the values found in:
   `../newsletter-subscription-form/newsletter-subscription-form-overrides.php`
 
-`<?php
+```
+<?php
 
 $name = ‘Your Company Name’';
 $description = __('Your mission, vision or a funny anecdote', 'newsletter-subscription-widget' );
@@ -25,7 +26,8 @@ $description = __('Your mission, vision or a funny anecdote', 'newsletter-subscr
 $widgetTitle = ‘'Newsletter';
 $widgetDescription = 'Sign up for my newsletter';
 $widgetConfirmationMessage = 'Thanks for signing up! Check your emails for the confirmation email we just sent you.';
-$widgetSubmitButton = 'Subscibe';`
+$widgetSubmitButton = 'Subscibe';
+```
 
 Change the file for your logo: Replace the following file
   `../newsletter-subscription-form/img/logo.png`
