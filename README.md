@@ -3,7 +3,7 @@ Wordpress-Subscription-Plugin
 
 *WordPress Subscription Plugin for CakeMail Contact Lists*
 
-**In order to configure the administrative console for the widget, you will need:**
+**In order to configure the administrative console for the plugin, you will need:**
 * An editing program (Sublime 2, TextEdit or Notepad)
 * The .zip folder for the Wordpress-Subscription-Plugin
 * Your logo as a 90px x 90px png file named “logo.png”
@@ -12,10 +12,10 @@ Wordpress-Subscription-Plugin
 	- font colors for your clients’ user name
 	- font color for your clients’ company name
 
-**To override the default text values, color and logo of the widget to reflect your brand:**
+**To override the default text values, color and logo of the plugin to reflect your brand:**
 
 Change the default text values using notepad or an editing program to change the values found in:
-  `../newsletter-subscription-form/newsletter-subscription-form-overrides.php`
+  `/newsletter-subscription-form-overrides.php`
 
 ```
 <?php
@@ -30,11 +30,11 @@ $widgetSubmitButton = 'Subscibe';
 ```
 
 Change the file for your logo: Replace the following file
-  `../newsletter-subscription-form/img/logo.png`
+  `/img/logo.png`
 
 
 Change the style sheet using notepad or an editing program to change the **Hex values only** found in:
-  `...newsletter-subscription-form/css/newsletter_subscription_backend_overrides.css`
+  `/css/newsletter_subscription_backend_overrides.css`
 
 ```
 div.newsletter div.header {
