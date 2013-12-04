@@ -17,7 +17,8 @@ newsletter-subscription-form
 
 Change the default text values using notepad or an editing program to change the values found in:
   `../newsletter-subscription-form/newsletter-subscription-form-overrides.php`
-
+  
+```
 <?php
 
 $name = 'CakeMail';
@@ -27,6 +28,7 @@ $widgetTitle = __('Newsletter','newsletter-subscription-widget');
 $widgetDescription = __('Subscribe to our newsletter!','newsletter-subscription-widget');
 $widgetConfirmationMessage = __('We just sent you an email that you need to click on before you get added to the list','newsletter-subscription-widget');
 $widgetSubmitButton = __('Subscribe','newsletter-subscription-widget');
+```
 
 Change the files for your logo and admin_header : Replace the following files
   `../newsletter-subscription-form/img/logo.png`
