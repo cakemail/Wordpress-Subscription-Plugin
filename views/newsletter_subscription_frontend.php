@@ -34,4 +34,8 @@
 
 </div>
 
+<script>
+    newsletter_subscription_form_path = '<?php echo plugins_url($instance['plugin_dir']); ?>';
+</script>
+
 <?php echo $args['after_widget']; ?>

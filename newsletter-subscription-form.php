@@ -7,8 +7,8 @@ Version: 1.0
 
 error_reporting( E_ALL );
 
-require_once ( dirname(__FILE__) . '/inc/request.php' );
-require_once ( dirname(__FILE__) . '/inc/api.php' );
+require_once ( __DIR__ . '/inc/request.php' );
+require_once ( __DIR__ . '/inc/api.php' );
 
 /**
  * Add newsletter widget.
@@ -32,16 +32,18 @@ class NewsletterSubscriptionForm extends WP_Widget {
             $this->number = $number;
         }
 
-        // Register style content
-        wp_register_style( 'newsletter-subscription-backend', plugins_url('newsletter-subscription-form/css/newsletter_subscription_backend.css') );
-        wp_register_style( 'newsletter-subscription-backend-overrides', plugins_url('newsletter-subscription-form/css/newsletter_subscription_backend_overrides.css') );
+        $plugin_dir = plugin_basename(__DIR__);
 
-        wp_register_style( 'newsletter-subscription-frontend', plugins_url('newsletter-subscription-form/css/newsletter_subscription_frontend.css') );
+        // Register style content
+        wp_register_style( 'newsletter-subscription-backend', plugins_url($plugin_dir . '/css/newsletter_subscription_backend.css') );
+        wp_register_style( 'newsletter-subscription-backend-overrides', plugins_url($plugin_dir . '/css/newsletter_subscription_backend_overrides.css') );
+
+        wp_register_style( 'newsletter-subscription-frontend', plugins_url($plugin_dir . '/css/newsletter_subscription_frontend.css') );
 
         // Register script content
-        wp_register_script( 'newsletter-base', plugins_url('newsletter-subscription-form/js/newsletter_base.js') );
-        wp_register_script( 'newsletter-subscription-backend', plugins_url('newsletter-subscription-form/js/newsletter_subscription_backend.js') );
-        wp_register_script( 'newsletter-subscription-frontend', plugins_url('newsletter-subscription-form/js/newsletter_subscription_frontend.js') );
+        wp_register_script( 'newsletter-base', plugins_url($plugin_dir . '/js/newsletter_base.js') );
+        wp_register_script( 'newsletter-subscription-backend', plugins_url($plugin_dir . '/js/newsletter_subscription_backend.js') );
+        wp_register_script( 'newsletter-subscription-frontend', plugins_url($plugin_dir . '/js/newsletter_subscription_frontend.js') );
     }
 
     /**
@@ -55,6 +57,8 @@ class NewsletterSubscriptionForm extends WP_Widget {
     public function widget( $args, $instance ) {
         if( !$instance['registered'] || !$instance['selected_list'] )
             return false;
+
+        $instance['plugin_dir'] = plugin_basename(__DIR__);
 
         wp_enqueue_script('jquery');
         wp_enqueue_script('jquery-ui-core');
@@ -86,6 +90,8 @@ class NewsletterSubscriptionForm extends WP_Widget {
         $instance['registered']          = isset( $instance[ 'registered' ]) ? ($instance[ 'registered' ] !== true ? false : true) : false;
         $instance['is_lists_open']       = isset( $instance[ 'is_lists_open' ] ) ? $instance[ 'is_lists_open' ] : 0;
         $instance['is_settings_open']    = isset( $instance[ 'is_settings_open' ] ) && $instance[ 'is_settings_open' ] != '' ? $instance[ 'is_settings_open' ] : 1;
+
+        $instance['plugin_dir'] = plugin_basename(__DIR__);
 
         $instance['registered'] = $instance['registered'] && !isset($instance['user']->id) ? false : $instance['registered'];
 

@@ -5,7 +5,7 @@
                 ?>
                 <?php if ( $field != 'id' && $field != 'registered' ) { ?>
                     <li class="<?php echo !$show && $field != 'email' ? 'drag-disabled' : ''; ?>">
-                        <img class="drag-icon" src="<?php echo plugins_url('newsletter-subscription-form/img/icon_move.png'); ?>" />
+                        <img class="drag-icon" src="<?php echo plugins_url($instance['plugin_dir'] . '/img/icon_move.png'); ?>" />
                         <input class="" id="<?php echo $this->get_field_id( 'field-chk-'.$field ); ?>" name="<?php echo $this->get_field_name( 'field-chk-'.$field ); ?>" type="checkbox" <?php echo $show || $field == 'email' ? 'checked="checked"' : ""; ?> <?php echo $field == 'email' ? 'disabled="disabled"' : ""; ?>/>
                         <input id="<?php echo $this->get_field_id( 'field-chk-index-'.$field ); ?>" name="<?php echo $this->get_field_name( 'field-chk-index-'.$field ); ?>" type="hidden" />
                         <label class="" for="<?php echo $this->get_field_id( 'field-chk-'.$field ); ?>"><?php echo $field; ?></label>

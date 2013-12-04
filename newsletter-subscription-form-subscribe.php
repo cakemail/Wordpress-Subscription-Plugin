@@ -1,6 +1,7 @@
 <?php
-require_once ( dirname(__FILE__) . '/inc/request.php' );
-require_once ( dirname(__FILE__) . '/inc/api.php' );
+
+require_once ( __DIR__ . '/inc/request.php' );
+require_once ( __DIR__ . '/inc/api.php' );
 
 $user_key = $_POST['user_key']; unset($_POST['user_key']);
 $list_id = $_POST['list_id']; unset($_POST['list_id']);

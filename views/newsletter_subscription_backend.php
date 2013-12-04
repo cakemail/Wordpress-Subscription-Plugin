@@ -10,7 +10,7 @@
         <div class="username"><?php echo $instance['user']->first_name . ' ' . $instance['user']->last_name; ?></div>
         <div class="company"><?php echo $instance['client']->company_name; ?></div>
         <?php } ?>
-        <img class="logo" src="<?php echo plugins_url('newsletter-subscription-form/img/logo.png'); ?>" />
+        <img class="logo" src="<?php echo plugins_url($instance['plugin_dir'] . '/img/logo.png'); ?>" />
     </div>
 
     <!-- TITLE -->

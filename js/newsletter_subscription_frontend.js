@@ -86,7 +86,7 @@ jQuery('.submit_newsletter_subscribe').on('click', function(e) {
   });
 
   jQuery.ajax({
-    url : "/wp-content/plugins/newsletter-subscription-form/newsletter-subscription-form-subscribe.php",
+    url : newsletter_subscription_form_path + "/newsletter-subscription-form-subscribe.php",
     method : 'post',
     data : data,
     success : function ( jqXHR, status_text ){
