@@ -7,7 +7,7 @@ newsletter-subscription-form
 * An editing program (Sublime 2, TextEdit or Notepad)
 * The .zip folder for the Newsletter Widget
 * Your logo as a 90 px x 90 px png file named “logo.png”
-* A CSS style sheet for the following items:
+* A CSS color code for the following items:
 	- background-color
 	- font colors for your clients’ user name
 	- font color for your clients’ company name
@@ -16,25 +16,30 @@ newsletter-subscription-form
 
 Change the default text values using notepad or an editing program to change the values found in:
   `../newsletter-subscription-form/newsletter-subscription-form-overrides.php`
-  
-```
-<?php
 
-$name = 'CakeMail';
-$description = __('CakeMail is an easy-to-use email marketing application that lets you build & send professional-looking email campaigns in minutes and track results.', 'newsletter-subscription-widget' );
+`<?php
 
-$widgetTitle = __('Newsletter','newsletter-subscription-widget');
-$widgetDescription = __('Subscribe to our newsletter!','newsletter-subscription-widget');
-$widgetConfirmationMessage = __('We just sent you an email that you need to click on before you get added to the list','newsletter-subscription-widget');
-$widgetSubmitButton = __('Subscribe','newsletter-subscription-widget');
-```
+$name = ‘Your Company Name’';
+$description = __('Your mission, vision or a funny anecdote', 'newsletter-subscription-widget' );
 
-Change the files for your logo and admin_header : Replace the following files
+$widgetTitle = ‘'Newsletter';
+$widgetDescription = 'Sign up for my newsletter';
+$widgetConfirmationMessage = 'Thanks for signing up! Check your emails for the confirmation email we just sent you.';
+$widgetSubmitButton = 'Subscibe';`
+
+Change the file for your logo: Replace the following file
   `../newsletter-subscription-form/img/logo.png`
-  `../newsletter-subscription-form/img/admin_header.png`
 
 
-Change the style sheet using notepad or an editing program to change the values found in:
-  `[plugins/path]/newsletter-subscription-form/css/newsletter_subscription_backend_overrides.css`
-
-
+Change the style sheet using notepad or an editing program to change the **Hex values only** found in:
+  `...newsletter-subscription-form/css/newsletter_subscription_backend_overrides.css`
+`
+div.newsletter div.header {
+    background-color: #fcfcfc;
+}
+div.newsletter div.header div.username {
+    color: #333333;
+}
+div.newsletter div.header div.company {
+    color: #999999;
+}`
