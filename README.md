@@ -7,7 +7,6 @@ newsletter-subscription-form
 * An editing program (Sublime 2, TextEdit or Notepad)
 * The .zip folder for the Newsletter Widget
 * Your logo as a 90 px x 90 px png file named “logo.png”
-* An Admin header image as a 250 px x 100 px png file named “admin_header.png”
 * A CSS style sheet for the following items:
 	- background-color
 	- font colors for your clients’ user name
