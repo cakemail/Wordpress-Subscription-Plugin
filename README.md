@@ -35,7 +35,8 @@ Change the file for your logo: Replace the following file
 
 Change the style sheet using notepad or an editing program to change the **Hex values only** found in:
   `...newsletter-subscription-form/css/newsletter_subscription_backend_overrides.css`
-`
+
+```
 div.newsletter div.header {
     background-color: #fcfcfc;
 }
@@ -44,4 +45,5 @@ div.newsletter div.header div.username {
 }
 div.newsletter div.header div.company {
     color: #999999;
-}`
+}
+```
