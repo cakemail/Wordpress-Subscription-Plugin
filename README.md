@@ -1,12 +1,12 @@
-newsletter-subscription-form
-============================
+Wordpress-Subscription-Plugin
+=============================
 
-*WordPress Plugin*
+*WordPress Subscription Plugin for CakeMail Contact Lists*
 
 **In order to configure the administrative console for the widget, you will need:**
 * An editing program (Sublime 2, TextEdit or Notepad)
-* The .zip folder for the Newsletter Widget
-* Your logo as a 90 px x 90 px png file named “logo.png”
+* The .zip folder for the Wordpress-Subscription-Plugin
+* Your logo as a 90px x 90px png file named “logo.png”
 * A CSS color code for the following items:
 	- background-color
 	- font colors for your clients’ user name
