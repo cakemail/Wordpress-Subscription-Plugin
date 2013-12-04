@@ -1,9 +1,9 @@
 <?php
 
-$name = 'Newsletter';
-$description = __('Collect new subscribers to your newsletter through your WordPress website.', 'newsletter-subscription-widget' );
+$name = 'Your Company Name';
+$description = 'Your mission, vision or a funny anecdote';
 
-$widgetTitle = __('Newsletter','newsletter-subscription-widget');
-$widgetDescription = __('Subscribe to our newsletter!','newsletter-subscription-widget');
-$widgetConfirmationMessage = __('We just sent you an email that you need to click on before you get added to the list','newsletter-subscription-widget');
-$widgetSubmitButton = __('Subscribe','newsletter-subscription-widget');
+$widgetTitle = 'Newsletter';
+$widgetDescription = 'Sign up for my newsletter';
+$widgetConfirmationMessage = 'Thanks for signing up! Check your emails for the confirmation email we just sent you.';
+$widgetSubmitButton = 'Subscibe';
