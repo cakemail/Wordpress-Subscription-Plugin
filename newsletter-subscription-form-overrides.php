@@ -1,7 +1,7 @@
 <?php
 
-$name = 'Newsletter';
-$description = __('Collect new subscribers to your newsletter through your WordPress website.', 'newsletter-subscription-widget' );
+$name = 'CakeMail';
+$description = __('CakeMail is an easy-to-use email marketing application that lets you build & send professional-looking email campaigns in minutes and track results.', 'newsletter-subscription-widget' );
 
 $widgetTitle = __('Newsletter','newsletter-subscription-widget');
 $widgetDescription = __('Subscribe to our newsletter!','newsletter-subscription-widget');
