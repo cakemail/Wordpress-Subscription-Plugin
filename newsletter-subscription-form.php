@@ -323,6 +323,7 @@ function get_fields(){
 
     $instance = $widget->get_settings();
     $instance = $instance[$_POST['widget_index']];
+    $instance['plugin_dir'] = plugin_basename(__DIR__);
 
     $instance['opt-lists'] = $_POST['list_id'];
 
