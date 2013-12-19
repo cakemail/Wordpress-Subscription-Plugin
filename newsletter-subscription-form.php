@@ -318,7 +318,7 @@ add_action('widgets_init',
      create_function('', 'return register_widget("NewsletterSubscriptionForm");')
 );
 
-function get_fields(){
+function newsletter_subscription_form_get_fields(){
     $widget = new NewsletterSubscriptionForm($_POST['widget_index']);
 
     $instance = $widget->get_settings();
@@ -331,6 +331,6 @@ function get_fields(){
 
     die($widget->getHTMLFields($instance));
 }
-add_action( 'wp_ajax_get_fields','get_fields');
+add_action( 'wp_ajax_get_fields','newsletter_subscription_form_get_fields');
 
 ?>
