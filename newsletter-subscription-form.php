@@ -14,7 +14,6 @@ require_once ( __DIR__ . '/inc/api.php' );
  * Add newsletter widget.
  */
 class NewsletterSubscriptionForm extends WP_Widget {
-
     public function __construct($number = null) {
         load_plugin_textdomain( 'newsletter-subscription-widget', false, 'newsletter-subscription-widget/locale' );
 
@@ -319,7 +318,7 @@ add_action('widgets_init',
      create_function('', 'return register_widget("NewsletterSubscriptionForm");')
 );
 
-add_action( 'wp_ajax_get_fields', function(){
+function get_fields(){
     $widget = new NewsletterSubscriptionForm($_POST['widget_index']);
 
     $instance = $widget->get_settings();
@@ -330,6 +329,7 @@ add_action( 'wp_ajax_get_fields', function(){
     $widget->getSelectedList($instance);
 
     die($widget->getHTMLFields($instance));
-});
+}
+add_action( 'wp_ajax_get_fields','get_fields');
 
 ?>
